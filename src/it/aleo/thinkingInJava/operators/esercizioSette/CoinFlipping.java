@@ -5,19 +5,19 @@ import java.util.Random;
 public class CoinFlipping {
 	
 	static Random random = new Random();
-	static boolean lancio = random.nextBoolean();
+	static boolean esitoLancio = random.nextBoolean();
 	
 	
 	public static void main(String[] args) {
 		
 		Moneta moneta = new Moneta();
 		
-		if (lancio == true) {
-			moneta.controlloLancio = "Testa";
+		if (esitoLancio) {
+			moneta.setFacciaInSu("Testa");
 		}
-		else moneta.controlloLancio = "Croce";
+		else moneta.setFacciaInSu("Croce");
 		
-		System.out.println(moneta.controlloLancio);
+		System.out.println(moneta.getFacciaInSu());
 	
 	}
 
