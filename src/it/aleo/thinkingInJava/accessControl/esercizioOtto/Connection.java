@@ -2,12 +2,18 @@ package it.aleo.thinkingInJava.accessControl.esercizioOtto;
 
 class Connection {
 
+	public int connectionId;
+	
 	private Connection() {
-
+		
 	}
 
-	public static Connection creaConnection() {
-		return new Connection();
+	private Connection(int id) {
+		this.connectionId = id;
+	}
+	
+	public static Connection creaConnection(int id) {
+		return new Connection(id);
 	}
 
 }
@@ -15,23 +21,20 @@ class Connection {
 
 
 
-
-
-
-
-
-
-
-
-
-
-//if (x >= 0 && x <= 5) {
-//Connection ogg = new Connection();
-//System.out.println(x + ") Nuovo oggetto" + ogg);
-//return ogg;
+//private int id;
+//
+//private Connection() {
+//
 //}
-//else {
-//Connection ogg = null;
-//System.out.println(x + ") Nuovo oggetto null" + ogg);
-//return ogg;
+//
+//public static Connection creaConnection() {
+//	return new Connection();
+//}
+//
+//public int getId() {
+//	return id;
+//}
+//
+//public void setId(int id) {
+//	this.id = id;
 //}

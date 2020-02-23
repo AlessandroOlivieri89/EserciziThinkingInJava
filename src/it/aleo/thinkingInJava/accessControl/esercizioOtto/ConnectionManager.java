@@ -2,23 +2,31 @@ package it.aleo.thinkingInJava.accessControl.esercizioOtto;
 
 public class ConnectionManager {
 
-	int x = 5;
+	int maxConnections = 5;
 	
-	Connection [] c = new Connection[x];
+	int currentConnectionId = 1;
 	
-	void creaOggetto() {
-		for (int i = 1; i<=x; i++) {
-			Connection.creaConnection();
-			System.out.println("Nuovo oggetto in array " + c.getClass().getSimpleName());
+	Connection [] connections = new Connection[maxConnections];
+	
+	public Connection getConnection() {
+		
+		if (currentConnectionId <= maxConnections) {
+			return Connection.creaConnection(currentConnectionId);
 		}
-		c = null;
-		System.out.println("Nuovo oggetto fuori array " + c);
+		else {
+			return null;
+		}
 	}
-	
-	
+
 }
 
 
-
-
-//x++;
+//int x = 5;
+//
+//Connection[] c = new Connection[x];
+//
+//Connection creaConnessione() {
+//
+//	return Connection.creaConnection();
+//
+//}
