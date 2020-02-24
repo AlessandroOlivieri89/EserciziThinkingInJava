@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class EsercizioDue {
 
+	
+	// MODIFICATORE DI DEFAULT ???
 	static int conteggioValoriX;
 	static int conteggioValoriY;
 
@@ -23,6 +25,7 @@ public class EsercizioDue {
 			} else
 				conteggioValoriY++;
 
+			// QUesto probabilmente e' da mettere fuori dal Ciclo ?
 			System.out.println("Questo è il conteggio di quante volte x è superiore " + conteggioValoriX);
 			System.out.println("Questo è il conteggio di quante volte y è superiore " + conteggioValoriY);
 		}
