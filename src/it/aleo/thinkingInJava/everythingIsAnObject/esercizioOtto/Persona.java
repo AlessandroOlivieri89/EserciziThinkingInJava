@@ -2,6 +2,9 @@ package it.aleo.thinkingInJava.everythingIsAnObject.esercizioOtto;
 
 public class Persona {
 
+	
+	
+	// Modificatore di Accesso DEFAULT NON Giustificato/inaccettabile/gia' spiegato piu' volte con esercizi specifici
 	static int numeroGambe = 2;
 	
 	String coloreCapelli;
@@ -16,6 +19,9 @@ public class Persona {
 		Persona p2 = new Persona();
 		Persona p3 = new Persona();
 		
+		
+		
+		// Accesso diretto alle variabili di istanza NON ammissibile
 		p1.coloreCapelli = "Neri";
 		p1.età = 30;
 		p1.nazionalità = "Svedese";
