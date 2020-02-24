@@ -13,6 +13,8 @@ public class DataOnly {
 	public static void main(String[] args) {
 		
 		DataOnly data = new DataOnly(); 
+		
+		// accesso diretto alle variabili di istanza NON ACCETTABILE
 		data.i = 10;
 		data.d = 2;
 		data.b = false;
