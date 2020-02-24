@@ -3,7 +3,9 @@ package it.aleo.thinkingInJava.controllingExecution.esercizioSette;
 
 public class EsercizioSette {
 
-	int i;
+	// ERRORE DI SCOPE
+	// Variabile NON UTILIZZATA se la commento NON CAMBIA NULLA
+	// int i;
 
 	public static void main(String[] args) {
 
