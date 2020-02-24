@@ -2,6 +2,7 @@ package it.aleo.thinkingInJava.accessControl.esercizioOtto;
 
 public class ConnectionManager {
 
+	// Il modificatore di accesso di DEFAULT NON e' giustificato
 	int maxConnections = 5;
 	
 	// VIOLAZIONE INCAPSULAMENTO
