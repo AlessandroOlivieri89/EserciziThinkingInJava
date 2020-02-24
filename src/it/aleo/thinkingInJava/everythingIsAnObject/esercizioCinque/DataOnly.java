@@ -2,6 +2,10 @@ package it.aleo.thinkingInJava.everythingIsAnObject.esercizioCinque;
 
 public class DataOnly {
 
+	/*
+	 * Modificatore di accesso NON giustificato
+	 */
+	
 	 int i;
 	 double d;
 	 boolean b;
