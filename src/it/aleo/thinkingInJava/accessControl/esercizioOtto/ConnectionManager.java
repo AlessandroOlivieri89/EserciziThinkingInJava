@@ -4,6 +4,8 @@ public class ConnectionManager {
 
 	int maxConnections = 5;
 	
+	// VIOLAZIONE INCAPSULAMENTO
+	// il Numero della connessione e' Tipico della Connessione e NON del ConnectionManager
 	int currentConnectionId = 1;
 	
 	Connection [] connections = new Connection[maxConnections];
