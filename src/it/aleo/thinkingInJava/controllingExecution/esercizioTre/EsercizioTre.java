@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class EsercizioTre {
 	
+	
+	
+	// NON Giustificato il modificatore di Default
 	static int conteggioValoriX;
 	static int conteggioValoriY;
 	
