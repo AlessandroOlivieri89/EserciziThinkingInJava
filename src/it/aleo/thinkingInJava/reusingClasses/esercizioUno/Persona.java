@@ -27,6 +27,7 @@ public class Persona {
 		this.cognome = cognome;
 	}
 	
+	// INGIUSTIFICATO il modificatore di DEFAULT
 	Animale a = new Animale();
 	
 }
