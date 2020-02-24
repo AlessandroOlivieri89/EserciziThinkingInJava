@@ -10,6 +10,8 @@ public class Main {
 			Connection connection = connectionManager.getConnection();
 			if(connection!=null) {
 				System.out.println("Nuova connessione con id " + connectionManager.currentConnectionId);
+				
+				// VIOLATO INFORMATION HIDING
 				connectionManager.currentConnectionId++;
 			}
 			else {
